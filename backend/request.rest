@@ -1,0 +1,29 @@
+GET  http://localhost:5000/users
+Authorization: Bearere 
+
+###
+POST   http://localhost:5000/users
+Content-Type: application/json
+
+{
+    "name": "Dolfis2",
+    "email": "email2@gmail.com",
+    "password": "123456",
+    "confPassword": "1234567"
+}
+
+###
+POST   http://localhost:5000/login
+Content-Type: application/json
+
+{
+    "email": "email@gmail.com",
+    "password": "123456"
+}
+
+###
+GET   http://localhost:5000/token
+
+###
+DELETE    http://localhost:5000/logout
+
